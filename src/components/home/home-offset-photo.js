@@ -6,7 +6,7 @@ function HomeOffsetPhoto() {
   return (
     <div className="offset-photo-content">
       <div className="offset-photo-div">
-        <a href="#">
+        <a href="./">
           <img
             src={WomenWorking}
             alt="Women working together at computer"
@@ -26,7 +26,7 @@ function HomeOffsetPhoto() {
         </div>
         <div className="offset-button">
           <h3>
-            <a href="#">LEARN MORE ABOUT OUR WORK ⟶</a>
+            <a href="./">LEARN MORE ABOUT OUR WORK ⟶</a>
           </h3>
         </div>
       </div>

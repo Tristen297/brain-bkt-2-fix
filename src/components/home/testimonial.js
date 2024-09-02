@@ -26,9 +26,10 @@ const testimonials = [
   }
 ];
 
+
 function Testimonial() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
+/*
   const goToNextTestimonial = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
   };
@@ -39,6 +40,7 @@ function Testimonial() {
         (prevIndex - 1 + testimonials.length) % testimonials.length
     );
   };
+*/
 
   return (
     <div className="testimonial-content">
