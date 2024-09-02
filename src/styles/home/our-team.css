@@ -1,0 +1,76 @@
+.our-team-content {
+    display: flex;
+    flex-direction: column; /* Keep the text and images in a vertical stack */
+    align-items: center;    /* Center align all content */
+    gap: 20px;
+    padding: 20px;
+    margin: 100px 0;
+}
+
+.our-team-text {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.our-team-text h1 {
+    font-size: 3.5em;
+    color: #333; /* You can adjust the color as needed */
+}
+
+.team-pics-container {
+    display: flex;
+    justify-content: center; /* Center the photos horizontally */
+    gap: 15vw; /* Increase space between the photos */
+}
+
+.team-pic {
+    width: 400px;  /* Adjusted size */
+    height: 400px;  /* Adjusted size */
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    filter: grayscale(100%); /* Make the image black and white */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transition for both filter and transform */
+}
+
+.team-pic-container {
+    width: 400px;  /* Match the image size */
+    height: 400px; /* Match the image size */
+    border-radius: 50%;
+    overflow: hidden; /* Ensure the image stays within the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allows for absolutely positioned text */
+}
+
+.team-pic {
+    width: 100%;  /* Make sure the image fills the container */
+    height: 100%; /* Make sure the image fills the container */
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(100%); /* Make the image black and white */
+    transition: transform 0.5s ease, filter 0.5s ease; /* Smooth transition for both filter and transform */
+}
+
+.team-pic:hover {
+    filter: grayscale(30%); /* Full color on hover */
+    transform: scale(1.1); /* Zoom in on hover */
+}
+
+.hover-text {
+    position: absolute;
+    bottom: 10%; /* Position the text near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+.team-pic-container:hover .hover-text {
+    opacity: 1; /* Show the text on hover */
+}
+

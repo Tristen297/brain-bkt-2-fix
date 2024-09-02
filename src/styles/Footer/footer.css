@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+body, .work-together-container, .main-content h1, .sub-content p, .cta-button, .footer-nav li {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.work-together-container {
+    background-color: #F5F5F5; /* Background color matching the screenshot */
+    text-align: left;
+    padding: 0 20vw; /* Add margin on the right and left */
+    padding-bottom: 8vh;
+}
+  
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.main-content h1 {
+    font-size: 100px;
+    font-weight: bold;
+}
+  
+.sub-content {
+    text-align: right;
+}
+  
+.sub-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+  
+/* Rounded Button */
+.cta-button-footer {
+    width: 200px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px; /* Matches the height for vertical centering */
+    text-transform: uppercase;
+    border-radius: 10px; /* Add rounded corners */
+}
+  
+.cta-button-footer:hover {
+    transform: scale(1.01); /* Slightly increase the size */
+    background-color: #662f8f; /* Change background color on hover */
+    border-color: #abd038; /* Change border color on hover */
+    color: #abd038; /* Change X icon color on hover */
+}
+  
+.footer {
+    margin-top: 50px;
+    border-top: 1px solid #000;
+    padding-top: 20px;
+}
+  
+.footer-nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Add this CSS to ensure links are black */
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
